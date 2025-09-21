@@ -4,22 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="spotstyle.css">
-    <title>Document</title>
+    <title>SpotSpot Home</title>
+    <style>
+        .welcome {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: right;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
     <nav class="main-nav">
-        <div class="nav-brand">Community Hub</div>
+        <div class="nav-brand">SpotSpot</div>
         <button class="nav-toggle" aria-label="Toggle navigation menu">
-            <span></span>
+            <spanx></span>
             <span></span>
             <span></span>
         </button>
         <ul class="nav-menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#resources">Resources</a></li>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#contact">Contact</a></li>
+    <ul style = "list-style:none; margin:0; padding:0;">
+      <li style="display:inline; margin-right:12px;"><a href="/SpotSpot/forums.html">Forums</a></li>
+      <li style="display:inline; margin-right:12px;"><a href="/SpotSpot/Map.html">Map</a></li>
+      <li style="display:inline; margin-right:12px;"><a href="/SpotSpot/Gallery.html">Gallery</a></li>
+      <li style="display:inline; margin-right:12px;"><a href="/SpotSpot/spotspot.html">Home</a></li>
+    </ul>
         </ul>
+    
     </nav>
+
+    <main class=":welcome">
+    <p>    Welcome to <strong>SpotSpot</strong>
+        Here you can share your clips and gear, mark spots on a map, and get to know other athletes in your area!
+
+    </main>
+    <script src = "spotjs.js"></script>
 </body>
 </html>
