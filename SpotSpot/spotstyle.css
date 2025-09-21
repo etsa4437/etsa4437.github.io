@@ -1,0 +1,8 @@
+@media (max-width: 768px){
+    .nav-brand
+}
+
+.nav_menu{
+    display:flex;
+    gap: 20px;
+}
