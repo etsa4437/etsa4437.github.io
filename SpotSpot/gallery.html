@@ -9,24 +9,16 @@
     <link rel="stylesheet" href ="spotstyle.css">
 <style>
   .video-gallery {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-      padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 14px;
+    padding: 16px;
   }
+
   .video-gallery video {
     width: 100%;
     height: auto;
-  }
-
-  @media (min-width: 600px) {
-    .video-gallery {
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-    .video-gallery video {
-      width: 48%;
-    }
+    object-fit: cover;
   }
 
 </style>
@@ -50,9 +42,20 @@
     <video controls>
       <source src="Skate edit.mp4" type="video/mp4">
       </video>
-  <video controls>
-      <source src="IMG_1625.mp4" type="video/mp4">     
+        <video controls>
+      <source src="vid1.mp4" type="video/mp4">     
       </video>
+        <video controls>
+      <source src="vid2.mp4" type="video/mp4">     
+      </video>
+        <video controls>
+      <source src="vid3.mp4" type="video/mp4">     
+      </video>
+        <video controls>
+      <source src="vid4.mp4" type="video/mp4">     
+      </video>
+
+    
   </main>
 </body>
 </html>
