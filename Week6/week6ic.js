@@ -19,3 +19,10 @@ function filterPhotos(category) {
     }
   });
 }
+
+
+function setLanguage(lang) {
+    localStorage.setItem('userLanguage', lang);
+}
+
+const userLang = localStorage.getItem('userLanguage') || 'en';
