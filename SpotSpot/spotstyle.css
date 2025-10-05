@@ -7,6 +7,13 @@ body {
 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+@media (width <=450px){
+}
+@media (450px < width <=800){
+}
+@media (width <=1200px){
+}
+
 .main-nav{
     padding: 20px;
     display: flex;
@@ -173,3 +180,6 @@ a:visited{
         .welcome-grid{ grid-template-columns: 1fr;}
         }
      }
+
+
+

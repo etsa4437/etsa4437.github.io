@@ -24,3 +24,23 @@ function checkKey(key_code) {
 }
 
 navToggle.addEventListener('click', showMenu);
+
+function savePref() {
+    let choice = document.getElementById('transport').value;
+    if (choice) {
+        localStorage.setItem('prefrence', choice);
+        document.getElementById('message').textContent = "Saved: " + choice;
+    }
+}
+
+function clearData() {
+    localStorage.remlveItem('prefrence');
+    document.getElementById('transport').value = "";
+    document.getElementById('message').textContent = "Consider it Cleared";
+}
+
+let saved = localStorage.getItem('prefrence');
+if (saved) {
+    document.getElementById('transport').value = saved;
+    document.getElementById('message').textContent = "Current Option:" + saved;
+}
