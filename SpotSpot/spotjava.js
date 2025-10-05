@@ -28,15 +28,15 @@ navToggle.addEventListener('click', showMenu);
 function savePref() {
     let choice = document.getElementById('transport').value;
     if (choice) {
-        localStorage.setItem('prefrence', choice);
+        localStorage.setItem('preference', choice);
         document.getElementById('message').textContent = "Saved: " + choice;
     }
 }
 
 function clearData() {
-    localStorage.remlveItem('prefrence');
-    document.getElementById('transport').value = "";
-    document.getElementById('message').textContent = "Consider it Cleared";
+    localStorage.removeItem('preference');
+    document.getElementById('preference').value = "";
+    document.getElementById('currentPref').textContent = "Consider it Cleared";
 }
 
 let saved = localStorage.getItem('prefrence');
