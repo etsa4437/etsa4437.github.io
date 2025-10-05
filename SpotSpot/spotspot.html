@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="spotstyle.css">
     <title>SpotSpot Home</title>
+    <script src="spotjava.js" defer></script>
     <style>
         .welcome {
             flex: 1;
@@ -44,19 +45,22 @@
     </p>
         </section>
 
-        <h3>Choose your Sport!</h3>
-        <select id="preference">
-            <option value="Skateboarding">Skateboarding</option>
-            <option value="BMX">BMX</option>
-            <option value="Scootering">Scootering</option>
-            <option value="Rollerskating">Rollerskating</option>
+    <h3>Choose your Sport!</h3>
+    <select id="preference">
+      <option value="">-- Select --</option>
+      <option value="Skateboarding">Skateboarding</option>
+      <option value="BMX">BMX</option>
+      <option value="Scootering">Scootering</option>
+      <option value="Rollerskating">Rollerskating</option>
+    </select>
 
-        </select>
+    <div style="margin-top:8px;">
+      <button id="saveBtn">Save</button>
+      <button id="clearBtn">Clear</button>
+    </div>
 
-        <button onclick="savePref()">Save</button>
-        <button onclick="clearData()">Clear</button>
+    <p id="currentPref" style="margin-top:8px;"></p>
 
-        <p id="currentPref"></p>
 
         <h4>
             We store data on which sport you prefer to enhance your experience on our site.
@@ -82,6 +86,5 @@
 
       </section>  
     </main>
-    <script src = "spotjs.js"></script>
 </body>
 </html>

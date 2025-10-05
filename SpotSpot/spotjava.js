@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', () => {
+
 
 const navToggle = document.querySelector('.nav-toggle');
 const navMenu = document.querySelector('.nav-menu');
@@ -23,24 +25,66 @@ function checkKey(key_code) {
     }
 }
 
-navToggle.addEventListener('click', showMenu);
+ if (navToggle) navToggle.addEventListener('click', showMenu);
 
-function savePref() {
-    let choice = document.getElementById('transport').value;
-    if (choice) {
-        localStorage.setItem('preference', choice);
-        document.getElementById('message').textContent = "Saved: " + choice;
+
+
+ const select = document.getElementById('preference');
+
+  const msg = document.getElementById('currentPref');
+
+  const saveBtn = document.getElementById('saveBtn');
+
+  const clearBtn = document.getElementById('clearBtn');
+
+  const KEY = 'preference';
+
+  function renderSaved() {
+
+    const saved = localStorage.getItem(KEY);
+
+    if (saved) {
+
+      select.value = saved;
+
+      msg.textContent = 'Current Option: ' + saved;
+
+    } else {
+
+      msg.textContent = '';
+
     }
-}
+  }
 
-function clearData() {
-    localStorage.removeItem('preference');
-    document.getElementById('preference').value = "";
-    document.getElementById('currentPref').textContent = "Consider it Cleared";
-}
+  function savePref() {
 
-let saved = localStorage.getItem('prefrence');
-if (saved) {
-    document.getElementById('transport').value = saved;
-    document.getElementById('message').textContent = "Current Option:" + saved;
-}
+    const choice = select.value;
+
+    if (!choice) { msg.textContent = 'Please select a sport.'; return; }
+
+    localStorage.setItem(KEY, choice);
+
+    msg.textContent = 'Saved: ' + choice;
+    
+  }
+
+  function clearData() {
+
+    localStorage.removeItem(KEY);
+
+    select.value = '';
+
+    msg.textContent = 'Data cleared.';
+
+  }
+
+  saveBtn.addEventListener('click', savePref);
+
+  clearBtn.addEventListener('click', clearData);
+
+  select.addEventListener('change', savePref);
+
+
+  renderSaved();
+  
+});
