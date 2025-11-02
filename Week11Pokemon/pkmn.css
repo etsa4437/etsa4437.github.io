@@ -1,9 +1,20 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align:center;
-    padding: 20px;
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+
+body {
+  font-family: 'Press Start 2P', sans-serif;
+  background: linear-gradient(135deg, #ff0000 .00000000001%, #8800f0 100%); 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem;
+  margin: 0;
 }
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
 
 #pokemon img {
     width: 150px;
@@ -16,3 +27,4 @@ button {
     padding: 6px 12px;
 
 }
+
