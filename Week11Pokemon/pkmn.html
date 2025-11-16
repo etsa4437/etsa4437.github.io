@@ -11,22 +11,31 @@
     <h1>Poké Finder</h1>
 </header>
 
+<main>
+        <section aria-labelledby="search=section">
 
-</main>
-    <section aria-labelledby="search=section">
-        <h2 id="search-section" class = "visially-hidden">Search for a Pokémon</h2>
-        <label for="pokeInput" class = "visually-hidden">Pokémon Name or ID:</label>
-        <input id="pokeInput" type="text" placeholder="Enter Pokémon Name or ID">
-        <button id="searchBtn">Search</button>
-        <button id=""clearBtn">Clear History</button>
-        <p id ="message" role="status" ></p>
-    </section>  
+            <h2 id="search-section" class = "visially-hidden">Search for a Pokémon</h2>
 
-    <section id="results" aria-labelledby="results-heading">
-        <h2 id="results-heading" class = "visually-hidden">Search Results</h2>
-        <label for="pokemon" class = "visually-hidden">Pokémon Image:</label>
-    <div id = "pokemon"></div>
+            <label for="pokeInput" class = "visually-hidden">Pokémon Name or ID:</label>
+            
+            <input id="pokeInput" type="text" placeholder="Enter Pokémon Name or ID">
+            
+            <button id="searchBtn">Search</button>
+        
+            <button id="clearBtn">Clear History</button>   
 
+            <p id ="message" role="status" ></p>
+        
+        </section>  
+
+        
+        <section id="results" aria-labelledby="results-heading">
+        
+            <h2 id="results-heading" class = "visually-hidden">Search Results</h2>
+        
+            <label for="pokemon" class = "visually-hidden">Pokémon Image:</label>
+        
+            <div id = "pokemon"></div>
 </main>
 
 <footer>

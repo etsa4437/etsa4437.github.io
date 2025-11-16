@@ -14,6 +14,28 @@ if (lastSearch) {
     input.value = lastSearch;
 }
 
+const weaknesses = {
+    fire: ['water', 'ground', 'rock'],
+    water: ['electric', 'grass'],
+    grass: ['fire', 'ice', 'poison', 'flying', 'bug'],
+    electric: ['ground'],
+    normal: ['fighting'],
+    fighting: ['flying', 'psychic', 'fairy'],
+    flying: ['electric', 'ice', 'rock'],
+    poison: ['ground', 'psychic'],
+    ground: ['water', 'grass', 'ice'],
+    rock: ['water', 'grass', 'fighting', 'ground', 'steel'],
+    bug: ['fire', 'flying', 'rock'],
+    ghost: ['ghost', 'dark'],
+    steel: ['fire', 'fighting', 'ground'],
+    psychic: ['bug', 'ghost', 'dark'],
+    ice: ['fire', 'fighting', 'rock', 'steel'],
+    dragon: ['ice', 'dragon', 'fairy'],
+    dark: ['fighting', 'bug', 'fairy'],
+    fairy: ['poison', 'steel']
+
+};
+
 function getPokemon(savedName) {
     const name = savedName || input.value.toLowerCase().trim();
     if (!name) return;
@@ -30,10 +52,17 @@ function getPokemon(savedName) {
         })
         .then(data => {
             message.textContent = '';
+
+
+            const mainType = data.types[0].type.name;
+            const weakTo = weaknesses[mainType] || [];
+
+
             pokemonDiv.innerHTML = `
                 <h3>${data.name.toUpperCase()}</h3>
                 <img src="${data.sprites.front_default}">
                 <p>Type: ${data.types[0].type.name}</p>
+                <p><strong>Weak to:</strong> ${weakTo.join(', ') || 'None'}</p>
                 `;
 
             localStorage.setItem('lastPokemon', name);
