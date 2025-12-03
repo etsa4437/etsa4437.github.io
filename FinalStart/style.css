@@ -1,0 +1,76 @@
+@import url("https://use.typekit.net/kjc2rnh.css");
+body {
+  font-family: "costa", sans-serif;
+}
+
+
+#color1 {
+  background-color: #464655;
+}
+#color2 {
+  background-color: #94958B;
+}
+#color3 {
+  background-color: #B7B6C1;
+}
+#color4 {
+  background-color: #D5CFE1;
+}
+
+
+p {
+  font-size: 16px;
+   color:#4f4f75;
+}
+
+.small-text {
+  font-size: 12px;
+   color:#D5CFE1;
+}
+
+h3 {
+  font-size: 20px;
+   color:#B7B6C1;
+ 
+}
+h2 {
+  font-size: 24px;
+   color:#5c5462;
+}
+h1 {
+  font-size: 28px;
+   color:rgb(129, 84, 158);
+}
+
+a {
+  text-decoration: none;
+  color: cornflowerblue;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: rgb(73, 85, 125);
+}
+
+a:visited {
+  color: rgb(123, 83, 106);
+}
+
+.styled-button {
+  background-color: #464655;
+  color: white;
+  font-family: inherit;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.styled-button:hover {
+  background-color: #94958B;
+}
+.top-rectangle {
+  background-color: #683e68; 
+  height: 30px;              
+  width: 100%;               
+}
