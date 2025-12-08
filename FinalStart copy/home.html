@@ -3,27 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-        <link rel="stylesheet" href ="style.css">
+    <title>Ethan Saunders</title>
+    <link rel="stylesheet" href ="style.css">
 </head>
-<div class="top-rectangle"></div>
 <body>
-    <h1>Ethan Saunders</h1>
-
-<nav aria-label="Primary">
- 
-    <ul style = "list-style:none; margin:0; padding:0;">
-      <li style="display:inline; margin-right:12px;"><a href="/Week_4_Rec/home.html">Home</a></li>
-      <li style="display:inline; margin-right:12px;"><a href="/Week_4_Rec/interests.html">Interests</a></li>
-      <li style="display:inline; margin-right:12px;"><a href="/Week_4_Rec/goals.html">Goals</a></li>
-      <li style="display:inline; margin-right:12px;"><a href="/Week_4_Rec/contact.html">Contact</a></li>
-    </ul>
 <div class="top-rectangle"></div>
-</nav>
+
+
+<div id="mySidenav" class="sidenav" aria-label="Primary Navigation">
+    <button class ="closebtn" onclick="closeNav()">&times;</button>
+    <a href = "/Week_4_Rec/home.html">Home</a>
+    <a href = "/Week_4_Rec/interests.html">Interests</a>
+    <a href = "/Week_4_Rec/goals.html">Goals</a>
+    <a href = "/Week_4_Rec/contact.html">Contact</a>
+    </div>
+
+    <header>
+        <button class="menu-button" onclick="openNav()">&#9776;</button>
+        <h1>Ethan Saunders</h1>
+    </header>
+
 
     <h2>About</h2>
     <img src="headshot.png" alt="Photo of me" width="200">
     <p>I am a 3rd year student at CU Boulder, and I am majoring in Environmental Studies with a minor in creative technology design. I grew up in Laguna Beach, California and spent a lot of time going to the beach and skateboarding there. I went to high school in Jackson Hole, Wyoming and that helped my skiing skills, and also helped me further connect with nature. </p>
     
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </body>
 </html>

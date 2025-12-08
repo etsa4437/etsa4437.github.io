@@ -100,3 +100,30 @@ a:visited {
   color: #818181;
   background-color:aquamarine;
 }
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 18px;
+  font-size: 32px;
+  background: none;
+  border: none;
+  color: #f1f1f1;
+  cursor: pointer;
+}
+
+.menu-button {
+  font-size: 30px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: #464655;
+  margin-right:10px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
