@@ -2,10 +2,19 @@
 body {
   font-family: "costa", sans-serif;
 }
+body {
+  background-image: url("/Final/background.png");
+  background-size: cover;        
+  background-position: center;  
+  background-repeat: no-repeat;  
+  background-attachment: fixed;   
+  font-family: "costa", sans-serif;
+  cursor: url("/Final/Crosshair\ Navy.cur"), auto;
+}
 
 
 #color1 {
-  background-color: #464655;
+  background-color: #464655;  
 }
 #color2 {
   background-color: #94958B;
@@ -20,7 +29,7 @@ body {
 
 p {
   font-size: 16px;
-   color:#4f4f75;
+   color:#2B3A67;
 }
 
 .small-text {
@@ -35,11 +44,11 @@ h3 {
 }
 h2 {
   font-size: 24px;
-   color:#5c5462;
+   color:#2B3A67;
 }
 h1 {
   font-size: 28px;
-   color:rgb(129, 84, 158);
+   color:#2B3A67;
 }
 
 a {
@@ -70,7 +79,7 @@ a:visited {
   background-color: #94958B;
 }
 .top-rectangle {
-  background-color: #683e68; 
+  background-color: #2B3A67; 
   height: 30px;              
   width: 100%;               
 }
@@ -82,7 +91,7 @@ a:visited {
   z-index: 1000; 
   top: 0; 
   left: 0;
-  background-color: #464655; 
+  background-color: #2B3A67; 
   overflow-x: hidden; 
   padding-top: 20px;
   transition: 0.4s;
@@ -92,13 +101,13 @@ a:visited {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #f1f1f1;
+  color: #acc0dF;
   display: block;
 }
 
 .sidenav a:hover {
-  color: #818181;
-  background-color:aquamarine;
+  color: #ffffff;
+  background-color:rgb(26, 27, 51);
 }
 
 .sidenav .closebtn {
@@ -126,4 +135,26 @@ header {
   align-items: center;
   gap: 8px;
 }
+
+.profile-pic {
+  border: 6px solid #464655;
+  border-radius: 50%;
+  display: block;
+  max-width:100%;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  max-width: 700px;
+}
+
+ul li {
+  color: #2B3A67; 
+}
+
+
+
 

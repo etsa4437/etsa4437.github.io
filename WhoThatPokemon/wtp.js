@@ -20,9 +20,9 @@ function getRandomPokemon() {
     .then(res => res.json())
     .then(data => {
       currentPokemon = data.name.toUpperCase();
-      pokemonImage.src = data.sprites.front_default;
-      pokemonImage.style.filter = 'brightness(0)';
       revealBtn.disabled = false;
+      pokemonImage.src = data.sprites.front_default || '';
+      pokemonImage.style
       message.textContent = 'Guess the Pokemon';
     });
 }

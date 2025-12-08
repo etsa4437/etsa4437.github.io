@@ -1,28 +1,63 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #d93030 50%, #222 50%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.game {
+  background: rgba(0,0,0,0.3);
+  padding: 20px 30px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hidden {
+  display:none;
+}
+
+#pokemonImage {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  background: white;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#pokemonName {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+#message {
+  height: 20px;
+  margin-top: 5px;
+}
+
 button {
   width: 70px;
   height: 70px;
   border-radius: 50%;
   border: 4px solid black;
-  background: linear-gradient(to bottom, #e53935 50%, #ffffff 50%);
-  position: relative;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-button::before {
-  content: "";
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  background: white;
-  border: 3px solid black;
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-button:disabled {
-  opacity: 0.5;
-  cursor: default;
+  background: linear-gradient(to bottom, #e53935 50%, #fff 50%);
+  position: r
 }
